@@ -1,0 +1,3411 @@
+/* -----FUENTE PRINCIPAL DE LA PAGINA----- */
+@font-face {
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-regular.woff");
+}
+@font-face {
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-bold.woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-light-300.woff");
+  font-weight: 300;
+}
+
+/* -----VARIABLES----- */
+:root {
+  --fuente-principal: "Noah Text";
+  --azul-claro: #bac9ce;
+  --azul-medio: #34668a;
+  --azul-oscuro: #043959;
+  --amarillo: #ebbe48;
+  --negro: #000000;
+  --blanco: #ffffff;
+}
+
+* {
+  font-family: var(--fuente-principal);
+  font-weight: normal;
+}
+
+/* ---Eliminado de los botones el focus de Bootstrap--- */
+.btn:focus {
+  box-shadow: none;
+}
+
+/*  -----Pagina INICIO----- */
+/* -----Inicio HEADER VIDEO----- */
+.headerIndex {
+  height: 100% !important; 
+  padding: 0;
+  
+}
+
+.header-index {
+  height: 100% !important;
+ 
+}
+.header-video__home {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 6rem;
+  bottom: 0;
+  z-index: -1;
+  
+}
+/* -----Fin HEADER VIDEO----- */
+
+/* -----Inicio SOMOS ENLAZAR----- */
+.section-enlazar__index {
+  padding-top: 3.2rem;
+}
+.somosEnlazar {
+  background-color: #043959;
+  width: 100%;
+  height: 500px;
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.tituloEnlazar {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 100px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.textoSomos {
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  width: 50%;
+  padding-left: 50px;
+}
+.textoSomos span {
+  font-weight: bold;
+}
+.fotoEnlazar {
+  width: 28%;
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 850px;
+}
+/* -----Fin SOMOS ENLAZAR----- */
+
+/* -----Inicio Seccion NUESTRO OBJETIVO----- */
+.nuestro-objetivo{
+  display: flex;
+  background-color: var(--azul-medio);
+}
+.nuestro-objetivo__image{
+  width: 35rem;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.nuestro-objetivo__text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: end;
+  padding: 0 10rem;
+}
+.nuestro-objetivo__title{
+  color: var(--blanco);
+  font-size: 30px;
+  font-weight: bold;
+}
+.nuestro-objetivo__paragraph{
+  color: var(--blanco);
+  font-size: 16px;
+}
+.nuestro-objetivo__paragraph span{
+  font-weight: bold;
+}
+
+/* -----Fin Seccion NUESTRO OBJETIVO----- */
+
+/* -----Inicio Seccion CONOCE NUESTROS SERVICIOS----- */
+.container-conoce-nuestros-servicios {
+  background-color: var(--azul-claro);
+}
+.conocenos {
+  padding-top: 10rem;
+}
+.tituloConocenos {
+  font-size: 30px;
+  font-weight: bold;
+}
+.textoConocenos {
+  font-size: 16px;
+}
+.btn-cargar-cv {
+  padding: .2rem 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.buttonAprende1 {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.buttonAprende1:hover{
+  transform: scale(1.02);
+  color: var(--negro);
+}
+.container-flecha__nuestros-servicios {
+  padding: 4rem;
+}
+.letter-e-image__nuestros-servicios {
+  position: absolute;
+  width: 17rem;
+  top: 83rem;
+  right: 0;
+}
+.letter-e-dos-image__nuestros-servicios {
+  position: absolute;
+  width: 17rem;
+  top: 106rem;
+  left: 0;
+}
+/* -----Fin Seccion CONOCE NUESTROS SERVICIOS----- */
+
+/* -----Inicio Seccion APRENDE CON NOSOTROS----- */
+.bannerAprende {
+  background-image: url("../assets/images/aprende-con-nosotros.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  padding: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  
+}
+.tituloAprende {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 40px;
+}
+.buttonAprendemos:hover {
+  transform: scale(1.02);
+  color: var(--negro);
+}
+.buttonAprende:hover {
+  transform: scale(1.02);
+  color: var(--negro);
+}
+/* -----Fin Seccion APRENDE CON NOSOTROS----- */
+
+/* -----Inicio TESTIMONIOS----- */
+.teAcompañamos {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+.acompañamos1 {
+  text-align: center;
+  color: var(--negro);
+  font-weight: bold;
+}
+.acompañamos2 {
+  text-align: center;
+  color: var(--azul-medio);
+  font-weight: bold;
+}
+.swiper-slide__testimonios {
+  background-color: white !important;
+  
+}
+.card-person__testimonio {
+  color: var(--negro);
+}
+.card-person__title-testimonio,
+.card-person__testimonio p{
+  font-size: 1rem;
+}
+.card-person__title-testimonio{
+  font-weight: bold;
+}
+/* .card-person__title {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0rem;
+} */
+/* -----Fin TESTIMONIOS----- */
+
+/* -----Inicio Seccion FORMULARIO----- */
+.letter-form-index {
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+  width: 50%;
+  padding-right: 6rem;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 9rem;
+}
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+}
+.button-form-consulta:hover {
+  transform: scale(1.02);
+}
+/* -----Fin Seccion FORMULARIO----- */
+
+
+/* -----Pagina SERVICIOS----- */
+/* -----Inicio Header----- */
+.header-image-servicios-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/portada-servicios.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 5.5rem;
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Seccion PARA QUIEN LOS OFRECEMOS ----- */
+.serviciosTitulo {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10rem;
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+.card-body-servicios {
+  color: var(--blanco);
+  padding: 3rem 1rem 3rem 1rem;
+}
+/* -----Fin Seccion PARA QUIEN LOS OFRECEMOS ----- */
+
+/* -----Inicio Seccion REVISAMOS TU CV GRATIS ----- */
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis.webp");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex-direction: column;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.btn-cargar-cv {
+  padding: 0.3 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+/* -----Fin Seccion REVISAMOS TU CV GRATIS ----- */
+
+/* -----Inicio Seccion SE PARTE DEL CAPITAL HUMANO ----- */
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 120px;
+}
+.header-title2 span{
+  font-weight: bold;
+}
+/* -----Fin Seccion SE PARTE DEL CAPITAL HUMANO ----- */
+
+/* -----Pagina CURSOS Y TALLERES----- */
+/* -----Inicio Navbar----- */
+.navbar-custom {
+  background-color: var(--blanco);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 8%);
+  padding: 1rem 0;
+}
+.nav-link__instagram-linkedin {
+  filter: invert(19%) sepia(26%) saturate(2374%) hue-rotate(167deg)
+    brightness(91%) contrast(100%);
+}
+.nav-link{
+  font-weight: bold;
+}
+.navbar .nav-link:hover {
+  color: var(--azul-oscuro) !important;
+  transform: translateY(-1px);
+  transition: all 0.2;
+}
+/* -----Fin Navbar----- */
+
+/* -----Inicio Header----- */
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url("../assets/images/portada-cursos-talleres.webp"); */
+  background: -webkit-image-set( url(../assets/images/portada-cursos-talleres.webp) 1x, url(../assets/images/portada-cursos-talleres-banner-mobile.webp) 3x );
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  top: 6rem;
+}
+.header {
+  height: 70vh;
+  padding: 0;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Subheader----- */
+.subheader-container {
+  position: relative;
+  /* max-height: 340px; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.subheader-text {
+  font-weight: normal;
+  max-width: 50%;
+  margin: 11rem 4rem 5rem 5rem;
+}
+.subheader-text span {
+  font-weight: bold;
+}
+.subheader-image {
+  align-self: center;
+  padding-bottom: 10px;
+  width: 2rem;
+  transform: rotate(90deg);
+  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(162deg)
+    brightness(98%) contrast(89%);
+}
+.letter-e-image {
+  position: absolute;
+  width: 17rem;
+  top: 11rem;
+  right: 0;
+}
+/* -----Fin Subheader----- */
+
+/* -----Inicio Seccion CARDS de cursos----- */
+.section-cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+}
+.card-webinars{
+  overflow: visible !important;
+}
+.card-webinars i {
+  position: absolute;
+  top: 1rem;
+  left: -16px;
+  width: 9.6rem;
+  border-radius: 15px;
+  height: 3rem;
+  background-color: #dc3545eb;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.9;
+  font-style: normal;
+  color: white;
+  font-weight: bold;
+  border-bottom-left-radius: 0;
+}
+.card-webinars i::before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 0px;
+  width: 1rem;
+  height: 1.5rem;
+  background-color: #662830;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+.card-webinars i::after {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 0px;
+  width: 1rem;
+  height: 0.8rem;
+  background: #dc3545;
+}
+.card {
+  background-color: var(--azul-medio);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  transition: ease-in-out 0.4s;
+}
+.card:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.card-image {
+  width: 70%;
+  align-self: center;
+  transition: 0.3s;
+}
+.card-body {
+  color: var(--blanco);
+  padding: 1rem 1rem 2rem 1rem;
+}
+.body-card__one-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title {
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+.button-card {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.3rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-interesa {
+  padding: 0.4rem 2rem;
+  border: 2px solid var(--amarillo);
+  color: var(--blanco);
+  background: none;
+}
+.btn-interesa:hover{
+  color: var(--amarillo);
+}
+.btn-comprar {
+  padding: 0.4rem 2.7rem;
+}
+.position-absolute{
+  background-color: #dc3545;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 5rem;
+  line-height: 1.5rem;
+  height: 2rem;
+}
+/* -----Fin Seccion CARDS de cursos----- */
+
+/* -----Inicio Footer----- */
+.footer {
+  background: linear-gradient(180deg, #043959 0%, #34668a 100%);
+}
+.footer-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Footer Logo */
+.footer-logo {
+  padding-right: 3rem;
+}
+/* Footer left */
+.footer-left__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+  border-right: 1px solid #ebbe48;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+}
+.footer-left__list a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+.footer-left__list a:hover {
+  font-weight: bold;
+}
+.footer-left__list li {
+  padding: 0 0.6rem;
+  border-right: 1px solid white;
+}
+.footer-left__list li:last-child {
+  padding: 0 0.6rem;
+  border-right: none;
+}
+/* Footer middle */
+.footer-middle__list {
+  list-style: none;
+  margin-bottom: 0;
+  border-right: 1px solid #ebbe48;
+  padding: 0.5rem 2rem;
+}
+.footer-middle__list a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+.footer-middle__list a:hover {
+  font-weight: bold;
+}
+/* Footer right */
+.footer-right__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: var(--blanco);
+  margin-bottom: 0;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+.footer-right__list li {
+  padding: 0 0.6rem;
+}
+.footer-right__list img {
+  color: var(--blanco);
+}
+.instagram-logo,
+.twitter-logo,
+.telegram-logo {
+  filter: brightness(0) invert(1);
+  width: 1.5rem;
+  transition: ease-in-out 0.2s;
+}
+.instagram-logo:hover,
+.twitter-logo:hover,
+.telegram-logo:hover {
+  transform: scale(1.05);
+}
+.address {
+  color: var(--blanco);
+  font-weight: 300;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* -----Fin Footer----- */
+
+/* -----Inicio WhatsApp boton----- */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  height: 3em;
+  width: 3em;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+  z-index: 10;
+  transition: ease-in-out 0.2s;
+}
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+/* -----Fin WhatsApp boton----- */
+
+/* -----Inicio Subir al top boton----- */
+.arrow-icon {
+  position: fixed;
+  bottom: 200px;
+  right: 6em;
+  height: 3em;
+  width: 3em;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+  z-index: 10;
+}
+.active {
+  bottom: 1.5em;
+  visibility: visible;
+  opacity: 1;
+}
+/* -----Fin Subir al top boton----- */
+
+/* -----Inicio Modals----- */
+.modal-content {
+  background-color: var(--azul-medio);
+  border-radius: 10px;
+}
+.modal-header {
+  border-bottom: none;
+  justify-content: flex-start;
+  padding-left: 19rem;
+}
+.modal-title {
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+.modal-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 140px;
+  /* display: inline; */
+  border-top: 2px solid var(--amarillo);
+  border-left: 2px solid var(--amarillo);
+  height: 151px;
+  width: 570px;
+  z-index: 1;
+}
+.nav-item__custom-tab {
+  z-index: 50;
+}
+.nav-tabs {
+  border: none;
+  padding-bottom: 2rem;
+}
+.nav-link__custom-tab {
+  color: var(--blanco);
+  font-weight: bold;
+  border: 2px solid var(--amarillo) !important;
+  border-radius: 0.6rem 0.6rem 0 0 !important;
+}
+.nav-link__custom-tab.active {
+  background-color: var(--amarillo) !important;
+}
+.nav-link__custom-tab:hover {
+  color: var(--amarillo);
+}
+.modal-body__image {
+  align-self: baseline;
+  z-index: 2;
+  margin: 0 3em;
+}
+.image-left {
+  width: 12em;
+}
+.modal-body__text{
+  padding-right: 6rem;
+}
+.modal-body__list li {
+  color: var(--blanco);
+  font-weight: normal;
+  list-style-image: url(../assets/images/flecha.svg);
+}
+.modal-body__list li::marker{
+  line-height: 0px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.modal-body p {
+  color: var(--blanco);
+}
+.modal-footer {
+  border-top: none;
+  padding: 2rem 7.5rem 2rem 2rem;
+  justify-content: space-around;
+}
+.modal-footer__webinars {
+  border-top: none;
+  padding: 2rem 9rem 2rem 2rem;
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+.btn-close {
+  background: transparent url(../assets/images/x-cerrar.svg);
+  filter: invert(90%) sepia(74%) saturate(3294%) hue-rotate(319deg)
+    brightness(95%) contrast(93%);
+  opacity: 1;
+  align-self: flex-end;
+  margin: 1em 1em 0.3em 0;
+  font-size: 1.5em;
+}
+.modal-body__list {
+  padding-left: 1em;
+}
+.modal-body__paragraph span {
+  font-weight: bold;
+}
+.modal-body__paragraph-method {
+  font-weight: bold;
+}
+.download-program {
+  /* border: 2px solid var(--amarillo); */
+  color: var(--blanco);
+  background: none;
+  padding: 0.2em 1.2em;
+}
+.download-program:hover{
+  color: var(--amarillo) !important;
+}
+.ver-fechas {
+  border: 2px solid var(--amarillo);
+  color: var(--blanco);
+  background: none;
+  padding: 0.2rem 2rem;
+}
+.ver-fechas:hover{
+  color: var(--amarillo);
+}
+.btn-interesa__webinars{
+  padding: 0.2rem 2rem;
+  background: var(--amarillo);
+  color: var(--negro);
+}
+/* -----Fin Modals----- */
+
+/* -----Pagina COMUNIDAD----- */
+/* -----Inicio Subheader o Seccion de Instagram----- */
+.header-image__comunidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url("../assets/images/portada-comunidad.webp"); */
+  background: -webkit-image-set(
+    url("../assets/images/portada-comunidad.webp") 1x,
+    url("../assets/images/portada-comunidad-mobile.webp") 3x
+  );
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 5rem;
+}
+.subheader-container-comunity {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 7rem 0;
+}
+.letter-e-image__comunity {
+  position: absolute;
+  width: 17rem;
+  top: 21em;
+  left: -8em;
+}
+.subheader-comunity__text {
+  font-weight: bold;
+}
+.btn-ir-ahora {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  width: 12em;
+  transition: ease-in-out 0.3s;
+}
+.btn-ir-ahora:hover {
+  transform: scale(1.02);
+}
+.subheader-comunity__img {
+  width: 7em;
+  transition: ease-in-out 0.2s;
+}
+/* -----Fin Subheader o Seccion de Instagram----- */
+
+/* -----Inicio Seccion de Telegram----- */
+.plane-desktop{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.section-telegram__container {
+  position: relative;
+  background-color: var(--azul-claro);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 10em;
+  padding-bottom: 16em;
+  padding-left: 9em;
+}
+.section-telegram__container h3 {
+  font-weight: bold;
+}
+.section-telegram__container span {
+  font-weight: bold;
+  display: block;
+}
+.section-telegram__list {
+  padding-left: 1rem;
+}
+.btn-ser-parte {
+  position: relative;
+  z-index: 100;
+  margin-top: 3rem;
+  transition: ease-in-out 0.3s;
+}
+.btn-ser-parte:hover {
+  transform: scale(1.02);
+}
+.gif-avioncito {
+  display: flex;
+}
+/* -----Fin Seccion de Telegram----- */
+
+/* -----Pagina NOSOTROS----- */
+/* -----Inicio Header----- */
+.header-container__nosotros {
+  padding: 8rem 1.5rem 1.5rem 1.5rem;
+  background: var(--azul-claro);
+}
+.header-title__nosotros {
+  padding: 5rem 4rem 2rem 5rem;
+  color: var(--azul-oscuro);
+  font-weight: bold;
+}
+.header-text__nosotros {
+  font-size: 0.95rem;
+  font-weight: normal;
+  max-width: 60%;
+  padding: 0rem 4rem 5rem 5rem;
+  margin-bottom: 0;
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Equipo----- */
+.section-team__container {
+  background-color: var(--azul-medio);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.section-team__direccion-title {
+  color: var(--amarillo);
+  font-weight: bold;
+  margin-bottom: 3em;
+}
+.card-person {
+  color: var(--blanco);
+  transition: ease-in-out 0.5s;
+}
+.card-person__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+.card-person__img {
+  max-width: 85%;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+  transition: ease-in-out 0.5s;
+}
+
+/* -----Fin Equipo----- */
+
+/* -----Inicio Slider Otros de equipo----- */
+.section-other-team__container {
+  background-color: var(--azul-medio);
+  padding-bottom: 7rem;
+}
+.card-person__img-other {
+  max-width: 75%;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+  transition: ease-in-out 0.5s;
+}
+.other-team__title {
+  color: var(--amarillo);
+  font-weight: bold;
+  padding-bottom: 1em;
+  padding-left: 0.6rem;
+}
+.card-person p {
+  font-size: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--azul-medio);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  /* display: block; */
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--amarillo);
+}
+/* -----Fin Slider Otros de equipo----- */
+
+/* -----Inicio Nuestros valores----- */
+.nuestros-valores__title {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+  padding: 5rem 4rem 2rem 5rem;
+}
+.nuestros-valores__text-mobile {
+  display: none;
+}
+.nuestros-valores__image {
+  padding-bottom: 7rem;
+}
+/* -----Fin Nuestros valores----- */
+
+/* -----Inicio Trabaja con nosotros----- */
+.section-trabaja-nosotros__container {
+  background-color: var(--azul-claro);
+}
+.trabaja-nosotros__row {
+  padding: 7em;
+}
+.trabaja-nosotros__image {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+.trabaja-nosotros__title {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+.btn-cargar-cv-nosotros {
+  padding: 0.3rem 3rem !important;
+  transition: ease-in-out 0.2s;
+}
+.btn-cargar-cv-nosotros:hover {
+  transform: scale(1.05);
+}
+/* -----Fin Trabaja con nosotros----- */
+
+/* -----Inicio Modal CARGAR MI CV----- */
+.modal-content__trabaja-nosotros {
+  background-color: var(--blanco);
+  border-radius: 10px;
+}
+.modal-title__trabaja-nosotros {
+  color: var(--azul-oscuro);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.modal-body__trabaja-nosotros {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modal-body__form {
+  width: 75%;
+}
+.input__name,
+.input__tel,
+.input__email,
+.input__empresa,
+.input__email-empresa,
+.textarea__mensaje {
+  padding: 0.8em 1em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.input__name,
+.input__tel,
+.input__empresa,
+.input__email-empresa {
+  width: 48%;
+}
+.textarea__mensaje {
+  resize: none;
+}
+.label-cargar-cv {
+  background-color: transparent;
+  border: 2px solid var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.2rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.label-cargar-cv:hover {
+  transform: scale(0.98);
+}
+.span-cargar-cv {
+  display: block;
+  color: #ff0000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.modal-footer__trabaja-nosotros h3 {
+  color: var(--azul-oscuro);
+  font-weight: bold;
+}
+.modal-footer__trabaja-nosotros p {
+  font-size: 1.3rem;
+  color: var(--negro);
+  font-weight: bold;
+}
+.swal2-title {
+  color: var(--azul-oscuro) !important;
+}
+/* -----Fin Modal CARGAR MI CV----- */
+
+/* -----Pagina PARTICULARES Y GRUPOS----- */
+/* -----Inicio Header----- */
+.header-title__particulares{
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.header-image__particulares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-image-set(
+    url("../assets/images/portada-individuos-grupos.webp") 1x,
+    url("../assets/images/portada-individuos-grupos-mobile.webp") 3x
+  );
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  top: 5rem;
+}
+.padding-flecha{
+  padding-top: 9rem;
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Seccion CARDS particulares----- */
+.container-cards__particulares {
+  padding: 5em 0;
+}
+.container-card__particulares {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+.container-card__particulares:hover {
+  transform: scale(1.04);
+}
+.card__particulares-container-image {
+  height: 100%;
+  background-color: var(--azul-claro);
+}
+.card__particulares-image {
+  width: 5em;
+  height: 100%;
+  margin: 0 2em;
+}
+.card__particulares-text {
+  padding: 0 1em;
+  height: 100%;
+  justify-content: space-between;
+}
+.card__particulares-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 2rem 0 0.6rem 1rem;
+  margin-bottom: 0;
+}
+.card__particulares-negrita {
+  font-weight: bold;
+}
+.card__particulares-paragraph {
+  font-size: 14px;
+  padding: 1rem 1rem;
+}
+.button-card__particulares {
+  padding: 0.2rem 1.2rem;
+  margin-bottom: 2rem;
+}
+/* -----Fin Seccion CARDS particulares----- */
+
+/* -----Pagina EMPRESAS----- */
+/* -----Inicio Header----- */
+.header-image__empresas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-image-set(
+    url("../assets/images/portada-empresas.webp") 1x,
+    url("../assets/images/portada-empresas-mobile.webp") 3x
+  );
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+  top: 5rem;
+}
+.header-title__empresas {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.header-subtitle__empresas{
+  font-size: 1.5rem;
+  color: var(--blanco);
+  padding-top: 1rem;
+  text-align: center;
+}
+/* -----Fin Header----- */
+
+/* -----COMIENZO DE MEDIA QUERIES----- */
+/* ---Navbar--- */
+@media screen and (max-width: 975px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
+/* ---Boton al Top--- */
+@media screen and (max-width: 500px) {
+  .arrow-icon {
+    display: none;
+  }
+}
+/* ---Modal Formulario--- */
+@media screen and (max-width: 1000px) {
+  .envianos-consulta__text,
+  .adjunta-cv__text {
+    padding: 0 2rem;
+  }
+  .input-div__name-tel {
+    flex-direction: column;
+  }
+  .input__name,
+  .input__tel,
+  .input__empresa,
+  .input__email-empresa {
+    width: 100%;
+  }
+  .input__name,
+  .input__email-empresa {
+    margin-bottom: 1rem;
+  }
+  .label-cargar-cv {
+    padding: 0.2rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .buttons-cv__footer {
+    flex-direction: column;
+    align-items: center !important;
+    align-self: unset !important;
+  }
+  .cargar-cv__div {
+    margin: 0 !important;
+  }
+  .button-enviar__margin-top {
+    margin-top: 1rem;
+    padding: 0.2rem 3.6rem;
+  }
+}
+/* ---Pagina CURSOS Y TALLERES--- */
+@media screen and (max-width: 480px) {
+  .header{
+    height: 40vh;
+  }
+  .header-title{
+    padding: 0 2rem;
+  }
+  .header-image__cursos-talleres{
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    position: static;
+    top: 0;
+  }
+  .subheader-container{
+    padding-bottom: 4rem
+  }
+  .subheader-text{
+    margin: 0rem 2rem 3rem 1rem;
+    padding-top: 3rem;
+  }
+  .section-cards__container{
+    padding-top: 4rem;
+  }
+  .btn-interesa{
+    padding: 0.4rem 3.3rem;
+  }
+  .btn-comprar{
+    padding: 0.4rem 4rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .letter-e-image {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 890px) {
+  .subheader-container {
+    align-items: center;
+    max-height: none;
+  }
+  .subheader-text {
+    margin: 11rem 4rem 5rem 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subheader-text {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .footer-right__list {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .footer-container {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding-bottom: 20px;
+  }
+  .footer-logo {
+    padding: 0.8rem 0 1rem 0;
+  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-left__list {
+    flex-wrap: wrap;
+    border: none;
+  }
+  .footer-middle__list {
+    padding: 0 0 0 0;
+    border: none;
+  }
+  .nav-item__custom-tab {
+    width: 100%;
+  }
+  .nav-link__custom-tab {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 586px) {
+  .footer-logo {
+    padding: 0;
+  }
+  .footer-left__list {
+    padding: 0 2rem 0 0;
+  }
+  .footer-middle__list {
+    padding: 0 1rem 0 1rem;
+  }
+  .footer-right__list {
+    padding: 0.5rem 0 0.5rem 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    height: auto;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-mobile{
+    display: block !important;
+    padding-top: 1rem;
+  }
+  .footer-left {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .footer-left__list {
+    padding: 0;
+    flex-direction: column;
+  }
+  .footer-left__list li {
+    border-right: none;
+    padding: 0.4rem 0.6rem;
+  }
+  .footer-left__list li:last-child {
+    padding: 0.4rem 0.6rem 0.8rem 0.6rem;
+  }
+  .footer-middle {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .footer-right {
+    width: 100%;
+  }
+  .footer-right__list li:first-child {
+    display: none;
+  }
+  .address {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-custom__xl {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .modal-custom__xl {
+    max-width: 80%;
+  }
+  .modal-body::before {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .modal-body::before {
+    display: none;
+  }
+  .modal-header {
+    border-bottom: 2px solid var(--amarillo);
+    justify-content: center;
+    padding-left: 1rem;
+    text-align: center;
+  }
+  .modal-body {
+    flex-direction: column;
+  }
+  .modal-body__image {
+    align-self: auto;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+  .modal-body__text{
+    padding-right: 0;
+  }
+  .modal-footer {
+    flex-direction: column;
+    padding: 0em 2em 30px 2em;
+  }
+  .modal-footer__webinars{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+/* ----- Pagina COMUNIDAD ----- */
+@media screen and (max-width: 500px) {
+  .fixed-top{
+    position: static !important;
+  }
+  .header{
+    height: 0% !important;
+  }
+  .header-image__comunidad{
+    background-position: center;
+    height: 30vh;
+    position: static;
+  }
+  .letter-e-image__comunity{
+    display: none;
+  }
+  .subheader-container-comunity{
+    padding: 3rem 0;
+  }
+  .subheader-comunity__text{
+    margin-left: 1rem;
+  }
+  .btn-ir-ahora{
+    margin-top: 4rem;
+  }
+  .section-telegram__container{
+    background-image: none;
+    padding: 5rem 0 5rem 0;
+  }
+  .telegram-mobile-flex h3{
+    padding-left: 1rem;
+  }
+  .section-telegram__list{
+    padding-left: 2rem;
+  }
+  .telegram-mobile-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .avioncito-mobile{
+    display: block !important;
+    width: 100%;
+  }
+  .btn-ser-parte{
+    align-self: center;
+  }
+  .plane-desktop{
+    display: none;
+  }
+  .section-enlazar__index {
+    padding-top:0rem;
+}
+  .header-video__home {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+   top: 0rem; 
+  bottom: 0;
+  z-index: -1;
+}
+.header-image-servicios-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/images/servicios-cover-tablet-mobile.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 0rem !important;
+}
+.section-cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis-tablet.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ----- Pagina NOSOTROS ----- */
+@media screen and (max-width: 760px) {
+  .header-container__nosotros{
+    padding: 8rem 1.5rem 4.5rem 1.5rem;
+  }
+  .header-title__nosotros {
+    text-align: left;
+    padding: 2rem 0 0 0;
+  }
+  .header-text__nosotros {
+    text-align: left;
+    line-height: 19.98px;
+    max-width: none;
+    padding: 0;
+  }
+  .section-team__container {
+    padding: 5rem 0 0 0;
+  }
+  .section-team__direccion-title {
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 4rem;
+  }
+  .card-person{
+    margin-bottom: 3rem;
+  }
+  .card-person__last{
+    margin-bottom: 0;
+  }
+  .other-team__title-mobile{
+    align-self: flex-start;
+    padding-left: 0.2rem;
+  }
+  .nuestros-valores__title{
+    text-align: left;
+    padding: 4rem 0 0 1rem;
+  }
+  .nuestros-valores__image{
+    padding: 0;
+  }
+  .nuestros-valores__text-mobile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .nuestros-valores__text-mobile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .trabaja-nosotros__row {
+    padding: 4rem 0;
+  }
+  .trabaja-nosotros__image{
+    padding-bottom: 3rem;
+  }
+  .btn-cargar-cv-nosotros{
+    align-self: center;
+    padding: 0.3rem 3rem !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-container__nosotros{
+    padding: 4.5rem 1.5rem 4.5rem 1.6rem;
+  }
+  .header-title__nosotros{
+    padding: 0;
+  }
+  .section-other-team__container{
+    display: none;
+  }
+  .section-other-team__container-mobile{
+    display: block !important;
+    background-color: var(--azul-medio);
+    padding-top: 3rem;
+  }
+  .section-testimonios-mobile{
+    display: block !important;
+  }
+  .section-testimonios{
+    display: none;
+  }
+  .teAcompañamos {
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+  }
+}
+
+/* ----- Pagina PARTICULARES ----- */
+@media screen and (max-width: 480px) {
+  .header{
+    height: 40vh;
+  }
+  .header-title__particulares{
+    font-size: 1.3rem;
+  }
+  .header-image__particulares{
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    position: static;
+    top: 0;
+  }
+  .padding-flecha{
+    padding: 4rem 0;
+  }
+  .container-cards__particulares{
+    padding: 0 0 4rem 0;
+  }
+  .card__particulares-paragraph {
+    text-align: left !important;
+    padding: 1rem 0rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-card__particulares {
+    margin: 0 2rem;
+    flex-direction: column;
+  }
+  .card__particulares-container-image {
+    padding: 1rem 12rem;
+  }
+  .card__particulares-title {
+    text-align: left;
+    padding-left: 0;
+  }
+  .card__particulares-paragraph {
+    text-align: center;
+  }
+}
+
+/* ----- Pagina EMPRESAS ----- */
+@media screen and (max-width: 480px) {
+  .header-title__empresas{
+    font-size: 1.3rem;
+  }
+  .header-subtitle__empresas{
+    font-size: 1.1rem;
+  }
+  .header-image__empresas{
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    position: static;
+    top: 0;
+  }
+  .navbar-brand{
+    padding-left: 1rem;
+  }
+}
+
+
+/* ---MEDIA QUERIES GIME--- */
+
+@media screen and (max-width: 1920px) {
+.fotoEnlazar {
+  width: 22%;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 1200px;
+}
+}
+@media screen and (max-width: 1600px) {
+  .fotoEnlazar {
+    width: 20%;
+    display: block;
+    position: absolute;
+    top: 85px;
+    left: 1000px;
+  }
+  }
+  @media screen and (max-width: 1400px) {
+    .fotoEnlazar {
+      width: 20%;
+      display: block;
+      position: absolute;
+      top: 110px;
+      left: 900px;
+    }
+    } 
+@media screen and (max-width: 1100px) {
+  
+  .fotoEnlazar {
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 700px;
+  }
+  
+  .nuestro-objetivo__image{
+    width: 28rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .nuestro-objetivo__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    padding: 0 10rem;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+   
+}
+}
+@media screen and (max-width: 1024px) {
+  .header-image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/letra-e-completa.png);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    height: 60vh;
+    justify-items: center;
+    background-color: white;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 390px;
+}
+}
+@media screen and (max-width: 980px) {
+  
+  .fotoEnlazar {
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+  }
+  
+  .nuestro-objetivo__image{
+    width: 25rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .nuestro-objetivo__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    padding: 0 8rem;
+  }
+  .swiper-slide img {
+    width: 150px;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+ 
+}
+ 
+  .container-conoce-nuestros-servicios {
+    background-color: var(--azul-claro);
+  }
+  
+  
+  .buttonAprende {
+    background-color: #ebbe48;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    transition: ease-in-out 0.2s;
+    margin-left: 50px;
+  }
+  .letter-form-index {
+    display: none;
+    position: absolute;
+    width: 28rem;
+    top: 200rem;
+    left: 0;
+}
+.form-consulta {
+  width: 60% !important;
+  padding-right: 6rem;
+}
+  
+ 
+  .letter-form-index {
+    position: absolute;
+    width: 28rem;
+    top: 200rem;
+    left: 0;
+  }
+  .form-consulta {
+    width: 50%;
+    padding-right: 6rem;
+  }
+  .form-consulta h2 {
+    color: var(--azul-oscuro);
+  }
+  .button-form-consulta {
+    background-color: var(--amarillo);
+    border-radius: 1.2em;
+    padding: 0.4rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+  }
+  .button-form-consulta:hover {
+    transform: scale(1.02);
+  }
+  
+}
+@media screen and (max-width: 860px) {
+  
+  
+  .tituloEnlazar {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 20px;
+    line-height: 50px;
+    margin-left: 50px;
+  }
+  .textoSomos {
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    width: 50%;
+    padding-left: 50px;
+  }
+  .fotoEnlazar {
+    width: 30%;
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 550px;
+  }
+  
+  .nuestro-objetivo__image{
+    width: 23rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .nuestro-objetivo__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    padding: 0 7rem;
+  }
+  .swiper-slide img {
+    width: 150px;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+ 
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 50px;
+}
+.letter-form-index {
+  display: none;
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+width: 60% !important;
+padding-right: 6rem;
+}
+
+
+.letter-form-index {
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+  width: 50%;
+  padding-right: 6rem;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 80px;
+}
+
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+}
+.button-form-consulta:hover {
+  transform: scale(1.02);
+}
+
+}
+@media screen and (max-width: 790px) {
+ 
+  .tituloEnlazar {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 50px;
+    line-height: 50px;
+    margin-left: 50px;
+  }
+  .textoSomos {
+    font-size: 17px;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+   
+    
+  }
+  .fotoEnlazar {
+    display: none;
+  }
+  .nuestro-objetivo{
+    display: flex;
+    background-color: var(--azul-medio);
+    height: auto;
+  }
+  
+  .nuestro-objetivo__image{
+    display: none;
+    width: 25rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .nuestro-objetivo__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+  padding: 0rem;
+    margin: 50px ;
+  }
+  .letter-e-image__nuestros-servicios {
+    display: none;
+    
+}
+.bannerAprende {
+  background-image: url("../assets/images/servicios-cover-tablet.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  padding: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.tituloAprende {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+}
+.form-consulta {
+  width: 70% !important;
+  padding-right: 6rem;
+  }
+  .header-image-servicios-general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/servicios-cover-tablet.webp");
+    background-position:top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    position: relative;
+    
+  }
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+  
+  .serviciosTitulo {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-bottom: 8rem;
+    padding-top:.1rem;
+  }
+  h5, h5 {
+    font-size: 18px;
+}
+
+  .card-body-servicios {
+    color: var(--blanco);
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  
+  .header-image1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/revision-cv-gratis-tablet.webp");
+    background-position: top center; /*3rem*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    flex-direction: column;
+  }
+  .header-title1 {
+    color: white;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+    display: block;
+  }
+  
+  .header-image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/letra-e-completa.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    height: 40vh;
+    justify-items: center;
+    background-color: white;
+    margin-top: -100px;
+  }
+  .header-title2 {
+    color: #34668a;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    align-self: flex-start;
+    padding-top: 120px;
+  }
+  .header-title2 span{
+    font-weight: bold;
+  }
+  
+}
+@media screen and (max-width: 680px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }  
+  
+  .form-consulta {
+    width: 85% !important;
+    padding-right: 0;
+    margin-right: auto;}
+    .header-title {
+      color: var(--blanco);
+      padding: 0 1rem;
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 0;
+      filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+    }
+}
+@media screen and (max-width: 560px) {
+  
+  .tituloEnlazar {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 1px;
+    margin-left: 19px;
+  }
+  .textoSomos {
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    margin-left: -30px;
+   
+    
+  } 
+  .nuestro-objetivo__text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+  padding: 0rem;
+    margin: 30px ;
+  }
+  .conocenos {
+    padding-top: 5rem;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+  .tituloConocenos {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .textoConocenos {
+    font-size: 16px;
+  }
+  .tituloAprende {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+  .textoAprende {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+  }
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  height: 30vh !important;
+  justify-items: center;
+  background-color: white;
+  margin-top: -150px;
+  margin-bottom: 60px;
+ 
+}
+.header-title2 {
+  color: #34668a;
+  font-size:25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 85px;
+}
+.form-consulta {
+  width: 85% !important;
+  padding-right: 0;
+  margin-right: auto;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+  
+}
+}
+@media screen and (max-width: 480px) {
+  
+  
+
+  .nuestro-objetivo__title{
+    color: var(--blanco);
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .bannerAprende {
+    background-image: url("../assets/images/aprende-con-nosotros-mobile.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.letter-e-dos-image__nuestros-servicios {
+  display: none;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 0px;
+  font-size: 20px !important;
+}
+.header-image-servicios-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/servicios-cover-tablet-mobile.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  position: relative;
+  
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-bottom: 4rem;
+  padding-top: .1rem;
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis-mobile.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  flex-direction: column;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 60px;
+
+
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 65px;}
+  .form-consulta {
+    width: 85% !important;
+    padding-right: 0;
+    margin-right: auto;
+
+}
+
+
+
+}
+@media screen and (max-width: 435px) {
+ 
+.tituloEnlazar {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: 19px;
+}
+.textoSomos {
+  font-size: 15px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+} 
+
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 3rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+  padding-top: .1rem;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+  
+
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 50px;
+}
+.form-consulta {
+  width: 85% !important;
+  padding-right: 0;
+  margin-right: auto;
+}
+}
+
+@media screen and (max-width: 420px) {
+ 
+
+.tituloEnlazar {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: 19px;
+}
+.textoSomos {
+  font-size: 15px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+.btn-cargar-cv {
+  padding: 0.3 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+
+
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+.tituloObjetivo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -180px;
+}
+.textoObjetivo {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -180px
+}
+.tituloConocenos {
+  font-size: 20px;
+  font-weight: bold;
+}
+.textoConocenos {
+  font-size: 15px;
+}
+.subheader-image {
+  align-self: center;
+  padding-bottom: 10px;
+  width: 1.5rem;
+  transform: rotate(
+90deg);
+  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(
+162deg) brightness(98%) contrast(89%);
+}
+.tituloAprende {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.teAcompañamos {
+  padding-top: 4rem;
+  padding-bottom: 0rem;
+}
+
+  .form-consulta {
+    width: 85% !important;
+    padding-right: 0;
+    margin-right: auto;
+}
+
+}
+@media screen and (max-width: 411px) {
+  
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  
+
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 40px;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+  
+}
+}
+@media screen and (max-width: 375px) {
+  
+
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 3rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 320px;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+  
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+.buttonAprende1 {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  font-size:15px ;
+ 
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+
+}
+@media screen and (max-width: 360px) {
+  .tituloEnlazar {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 5px;
+    margin-left: 19px;
+  }
+  .textoSomos {
+    font-size: 14px;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    margin-left: -30px;
+    
+  } 
+  .btn-cargar-cv {
+    padding: 0 2rem !important;
+    transition: ease-in-out 0.2s;
+}
+  
+  
+  .buttonAprende {
+    background-color: #ebbe48;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.5rem 3rem;
+    transition: ease-in-out 0.2s;
+    margin-left: 10px;
+   
+    margin-bottom: 20px;
+  }
+  .buttonAprendemos {
+    background-color: #ebbe48;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    transition: ease-in-out 0.2s;
+    width: 250px;
+    
+  }
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+  
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+ 
+ 
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 40px;
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+
+}
+@media screen and (max-width: 320px) {
+  
+
+.cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.nuestro-objetivo__title{
+  color: var(--blanco);
+  font-size: 20px;
+  font-weight: bold;
+}
+.nuestro-objetivo__paragraph{
+  color: var(--blanco);
+  font-size: 15px;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  padding-top: .1rem;
+}
+.buttonAprende1 {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  
+  width: 250px;
+ 
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+  
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.header-title1 {
+  color: white;
+  padding: 0.5rem 0.5rem 1rem 2rem;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 220px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+  margin: 20px;
+
+}
+}
+@media screen and (max-width: 300px) {
+  
+.tituloEnlazar {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 1px;
+  margin-left: 19px;
+}
+.textoSomos {
+  font-size: 13px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 5px;
+  
+  margin-bottom: 30px;
+  width: 275px;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+ 
+}
+.buttonAprende1 {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+ 
+  width: 250px;
+ 
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 0px;
+  font-size: 18px !important;
+}
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+  font-size: 15px;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  padding-top: .1rem;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  height: 20vh !important;
+  justify-items: center;
+  background-color: white;
+ 
+ 
+
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 40px;
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+
+}
+@media screen and (max-width: 270px) {
+  
+  .buttonAprende {
+    background-color: #ebbe48;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    transition: ease-in-out 0.2s;
+   
+    
+    width: 250px;
+    margin-bottom: 40px;
+}
+.buttonAprendemos {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  width: 250px;
+  
+}
+.somosEnlazar {
+  background-color: #043959;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.btn-cargar-cv {
+  padding: 0 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  height: 15vh !important;
+  justify-items: center;
+  background-color: white;
+  
+
+}
+.tituloEnlazar {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 1px;
+  margin-left: 19px;
+  margin-top: 10px;
+}
+.textoSomos {
+  font-size: 13px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+.header-title2 {
+  color: #34668a;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 30px;
+}
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .header-title2 {
+    color: #34668a;
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+    align-self: flex-start;
+    padding-top: 190px;
+}
+
+}
+@media screen and (min-width: 823px) and (orientation: landscape) {
+  .header-image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/letra-e-completa.png);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    height: 60vh;
+    justify-items: center;
+    background-color: white;
+    margin: 60px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 80px;
+}
+.nuestro-objetivo__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: end;
+  padding: 1rem 7rem;
+}
+}
+@media screen and (min-width: 812px) and (orientation: landscape) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 550px;
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 60px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 80px;
+}
+}
+@media screen and (min-width: 736px) and (orientation: landscape) {
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.header-title1 {
+  color: white;
+  padding: 0.5rem 0.5rem 2rem 1rem;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.btn-cargar-cv {
+  padding: .1rem 2rem !important;
+  transition: ease-in-out 0.2s;
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/revision-cv-gratis-tablet.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex-direction: column;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 40px;
+  
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 70px;
+}
+}
+@media screen and (min-width: 731px) and (orientation: landscape) {
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/revision-cv-gratis-tablet.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  flex-direction: column;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 30px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 70px;
+}
+}
+@media screen and (min-width: 667px) and (orientation: landscape) {
+  .header-image1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/revision-cv-gratis-tablet.webp);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    flex-direction: column;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 30px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 70px;
+}
+}
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  .header-image1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/revision-cv-gratis-tablet.webp);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    flex-direction: column;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 30px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 70px;
+}
+
+}
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  .header-image1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/images/revision-cv-gratis-tablet.webp);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    flex-direction: column;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin: 30px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 70px;
+}
+}
