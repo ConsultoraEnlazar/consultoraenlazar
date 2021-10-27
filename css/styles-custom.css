@@ -255,6 +255,9 @@
   background-color: white !important;
   
 }
+.card-person__img-other-testimonio{
+  max-width: 75%;
+}
 .card-person__testimonio {
   color: var(--negro);
 }
