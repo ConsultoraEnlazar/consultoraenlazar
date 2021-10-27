@@ -92,7 +92,7 @@
   font-weight: bold;
 }
 .fotoEnlazar {
-  width: 28%;
+  width: 30%;
   display: block;
   position: absolute;
   top: 100px;
@@ -280,7 +280,7 @@
 .letter-form-index {
   position: absolute;
   width: 28rem;
-  top: 200rem;
+  top: 207rem;
   left: 0;
 }
 .form-consulta {
@@ -380,7 +380,7 @@
   height: 60vh;
   justify-items: center;
   background-color: white;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .header-title2 {
   color: #34668a;
@@ -1765,7 +1765,7 @@
   }
   @media screen and (max-width: 1400px) {
     .fotoEnlazar {
-      width: 20%;
+      width: 22%;
       display: block;
       position: absolute;
       top: 110px;
@@ -3101,7 +3101,7 @@ padding-right: 6rem;
   padding-top: 30px;
 }
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .header-title2 {
     color: #34668a;
     font-size: 1.6rem;
@@ -3112,7 +3112,7 @@ padding-right: 6rem;
 }
 
 }
-@media screen and (min-width: 823px) and (orientation: landscape) {
+@media screen and (max-width: 823px) and (orientation: landscape) {
   .header-image2 {
     display: flex;
     align-items: center;
@@ -3147,7 +3147,7 @@ padding-right: 6rem;
   padding: 1rem 7rem;
 }
 }
-@media screen and (min-width: 812px) and (orientation: landscape) {
+@media screen and (max-width: 812px) and (orientation: landscape) {
   .somosEnlazar {
     background-color: #043959;
     width: 100%;
@@ -3184,7 +3184,7 @@ padding-right: 6rem;
   padding-top: 80px;
 }
 }
-@media screen and (min-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 736px) and (orientation: landscape) {
   .header-title {
     color: var(--blanco);
     padding: 0 1rem;
@@ -3246,7 +3246,7 @@ padding-right: 6rem;
   padding-top: 70px;
 }
 }
-@media screen and (min-width: 731px) and (orientation: landscape) {
+@media screen and (max-width: 731px) and (orientation: landscape) {
   .header-title {
     color: var(--blanco);
     padding: 0 1rem;
@@ -3294,7 +3294,7 @@ padding-right: 6rem;
   padding-top: 70px;
 }
 }
-@media screen and (min-width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
   .header-image1 {
     display: flex;
     align-items: center;
@@ -3333,7 +3333,7 @@ padding-right: 6rem;
   padding-top: 70px;
 }
 }
-@media screen and (min-width: 640px) and (orientation: landscape) {
+@media screen and (max-width: 640px) and (orientation: landscape) {
   .header-image1 {
     display: flex;
     align-items: center;
@@ -3373,7 +3373,7 @@ padding-right: 6rem;
 }
 
 }
-@media screen and (min-width: 568px) and (orientation: landscape) {
+@media screen and (max-width: 568px) and (orientation: landscape) {
   .header-image1 {
     display: flex;
     align-items: center;
