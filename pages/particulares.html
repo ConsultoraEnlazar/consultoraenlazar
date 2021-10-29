@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Servicios para individuos o grupos">
-    <meta name="keywords" content=" Recursos humanos, psicologia, psicología laboral, consultora enlazar, enlazar, consultoría, relaciones laborales, trabajo, educación, capital humano, talento, cursos, cursos online, capacitaciones, webinars gratuitos, curriculum, revisión de cv, empleabilidad, orientación vocacional, calidad de trabajo, comunidad, encontrar empleo, desarrollo profesional, reclutamiento, selección de personal, recruiting, coaching, acompañamiento personalizado, asesorías, recursos gratis, consultas, cosching, experiencia laboral, ">
+    <meta name="keywords"
+        content=" Recursos humanos, psicologia, psicología laboral, consultora enlazar, enlazar, consultoría, relaciones laborales, trabajo, educación, capital humano, talento, cursos, cursos online, capacitaciones, webinars gratuitos, curriculum, revisión de cv, empleabilidad, orientación vocacional, calidad de trabajo, comunidad, encontrar empleo, desarrollo profesional, reclutamiento, selección de personal, recruiting, coaching, acompañamiento personalizado, asesorías, recursos gratis, consultas, cosching, experiencia laboral, ">
     <title>Servicios para individuos o grupos - Consultora Enlazar</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FDTGJRDSN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4FDTGJRDSN');
+    </script>
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
@@ -257,7 +267,8 @@
                         una parte del personal de la organización a otras empresas, de acuerdo con su perfil profesional
                         y su carrera.
                     </p>
-                    <a data-bs-toggle="modal" data-bs-target="#outplacementModal" id="btn-open-modal" href="" class="button-card btn button-card__particulares align-self-end">quiero contratar</a>
+                    <a data-bs-toggle="modal" data-bs-target="#outplacementModal" id="btn-open-modal" href=""
+                        class="button-card btn button-card__particulares align-self-end">quiero contratar</a>
                 </div>
             </div>
         </div>
@@ -268,407 +279,412 @@
     <!-- Comienzo MODALS  -->
     <!-- Modal Servicio: Elaboración de CV -->
     <div class="modal fade" id="elaboracionCVModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormElaboracionCV(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormElaboracionCV(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Elaboración de CV">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Elaboración de CV">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Preparación para entrevistas -->
     <div class="modal fade" id="preparacionEntrevistasModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormPreparacionEntrevistas(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormPreparacionEntrevistas(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Preparación para entrevistas">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Preparación para entrevistas">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Coaching -->
-    <div class="modal fade" id="coachingModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormCoaching(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+    <div class="modal fade" id="coachingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormCoaching(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Coaching">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Coaching">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Orientación vocacional y ocupacional -->
-    <div class="modal fade" id="orientacionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormOrientacion(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+    <div class="modal fade" id="orientacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormOrientacion(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Orientación vocacional y ocupacional">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Orientación vocacional y ocupacional">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Perfil profesional en redes -->
-    <div class="modal fade" id="perfilRedesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormPerfilRedes(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+    <div class="modal fade" id="perfilRedesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormPerfilRedes(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Perfil profesional en redes">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Perfil profesional en redes">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Inserción laboral -->
     <div class="modal fade" id="insercionLaboralModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormInsercionLaboral(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormInsercionLaboral(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Inserción laboral">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Inserción laboral">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Autoconocimiento profesional -->
     <div class="modal fade" id="autoconocimientoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormAutoconocimiento(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormAutoconocimiento(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Autoconocimiento profesional">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Autoconocimiento profesional">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Acompañamiento en el mercado laboral para personas con capacidades diferenciales -->
     <div class="modal fade" id="capacidadesDiferencialesModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormCapacidadesDiferenciales(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormCapacidadesDiferenciales(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Acompañamiento en el mercado laboral para personas con capacidades diferenciales">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject"
+                            value="Servicio: Acompañamiento en el mercado laboral para personas con capacidades diferenciales">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Modal Servicio: Outplacement -->
-    <div class="modal fade" id="outplacementModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
-                <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
-                <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
-                    contacto a la brevedad.</p>
-            </div>
-            <div class="modal-body__trabaja-nosotros">
-                <form onsubmit="return submitFormOutplacement(this);"
-                    class="modal-body__form d-flex flex-column align-items-center"
-                    action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
-                    enctype="multipart/form-data">
-                    <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
-                        <input class="input__name" type="text" name="Nombre y Apellido"
-                            placeholder="Nombre y Apellido" required>
-                        <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3 w-100">
-                        <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
-                            placeholder="Escribí tu consulta acá" required></textarea>
-                    </div>
-                    <div class="d-flex mb-5 align-self-end">
-                        <div>
-                            <button type="submit" class="button-card btn">enviar consulta</button>
+    <div class="modal fade" id="outplacementModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormOutplacement(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
                         </div>
-                    </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
 
-                    <!-- inputs hidden -->
-                    <input type="hidden" name="_subject" value="Servicio: Outplacement (Particulares)">
-                    <input type="hidden" name="_template" value="box">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://google.com.ar">
-                </form>
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Outplacement (Particulares)">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://google.com.ar">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Fin MODALS  -->
 
