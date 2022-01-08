@@ -1251,7 +1251,7 @@
 .header-subtitle__empresas{
   font-size: 1.5rem;
   color: var(--blanco);
-  padding-top: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 /* -----Fin Header----- */

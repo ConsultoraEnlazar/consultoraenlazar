@@ -47,7 +47,7 @@
     <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
-                <img src="../assets/images/Logo-Enlazar-fin-de-año-100x50px.gif" alt="Logo" width="100" height="50">
+                <img src="../assets/images/logo-enlazar.svg" alt="Logo" width="200" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -268,6 +268,22 @@
                         y su carrera.
                     </p>
                     <a data-bs-toggle="modal" data-bs-target="#outplacementModal" id="btn-open-modal" href=""
+                        class="button-card btn button-card__particulares align-self-end">quiero contratar</a>
+                </div>
+            </div>
+
+            <div class="container-card__particulares">
+                <div class="card__particulares-container-image">
+                    <img class="card__particulares-image" src="../assets/images/icono-soluciones-digitales.svg"
+                        alt="Soluciones digitales">
+                </div>
+                <div class="card__particulares-text d-flex flex-column">
+                    <h3 class="card__particulares-title">Soluciones digitales</h3>
+                    <p class="card__particulares-paragraph">Tu página web y tu nueva identidad visual a un click de
+                        distancia. Hacemos realidad tu página y optimizamos
+                        tu imagen virtual según tus gustos e intereses.
+                    </p>
+                    <a data-bs-toggle="modal" data-bs-target="#SolucionesDigitalesParticularesModal" id="btn-open-modal" href=""
                         class="button-card btn button-card__particulares align-self-end">quiero contratar</a>
                 </div>
             </div>
@@ -680,12 +696,56 @@
                         <input type="hidden" name="_subject" value="Servicio: Outplacement (Particulares)">
                         <input type="hidden" name="_template" value="box">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://google.com.ar">
+                        <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="SolucionesDigitalesParticularesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo podemos ayudarte?</h5>
+                    <p class="envianos-consulta__text fw-bold text-center">Envianos tu consulta y nos pondremos en
+                        contacto a la brevedad.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormOutplacement(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <input class="input__email w-100" type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
+
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Servicio: Soluciones digitales (Particulares)">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/particulares.html">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fin MODALS  -->
 
     <!-- FOOTER -->
