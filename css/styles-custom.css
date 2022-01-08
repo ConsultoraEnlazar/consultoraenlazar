@@ -134,6 +134,7 @@
 /* -----Inicio Seccion CONOCE NUESTROS SERVICIOS----- */
 .container-conoce-nuestros-servicios {
   background-color: var(--azul-claro);
+  position: relative;
 }
 .conocenos {
   padding-top: 10rem;
@@ -168,13 +169,13 @@
 .letter-e-image__nuestros-servicios {
   position: absolute;
   width: 17rem;
-  top: 83rem;
+  top: -12rem;
   right: 0;
 }
 .letter-e-dos-image__nuestros-servicios {
   position: absolute;
   width: 17rem;
-  top: 106rem;
+  top: 14rem;
   left: 0;
 }
 /* -----Fin Seccion CONOCE NUESTROS SERVICIOS----- */
@@ -868,8 +869,8 @@
 .letter-e-image__comunity {
   position: absolute;
   width: 17rem;
-  top: 21em;
-  left: -8em;
+  top: 50rem;
+  left: -0;
 }
 .subheader-comunity__text {
   font-weight: bold;
