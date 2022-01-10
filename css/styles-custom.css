@@ -30,6 +30,7 @@
   font-weight: normal;
 }
 
+
 /* ---Eliminado de los botones el focus de Bootstrap--- */
 .btn:focus {
   box-shadow: none;
