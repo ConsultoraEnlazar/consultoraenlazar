@@ -419,6 +419,24 @@
 /* -----Fin Navbar----- */
 
 /* -----Inicio Header----- */
+.campus-button{
+  align-self: center;
+}
+.parrafo-accede{
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.parrafo-proba{
+  font-weight: bold;
+  color: var(--azul-medio);
+  margin-bottom: 2rem;
+}
+.parrafo-camino span{
+  font-weight: bold;
+}
+.header-campus{
+  margin-top: 8rem;
+}
 .header-image {
   display: flex;
   align-items: center;
@@ -453,7 +471,7 @@
   /* max-height: 340px; */
   display: flex;
   flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 .subheader-text {
   font-weight: normal;
