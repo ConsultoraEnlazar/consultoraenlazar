@@ -500,7 +500,7 @@
 /* -----Inicio Seccion CARDS de cursos----- */
 .section-cards__container {
   background-color: var(--azul-claro);
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 7rem;
 }
 .card-webinars{
