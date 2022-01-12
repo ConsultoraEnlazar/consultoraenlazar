@@ -485,9 +485,30 @@
   align-self: center;
   padding-bottom: 10px;
   width: 2rem;
-  transform: rotate(90deg);
-  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(162deg)
-    brightness(98%) contrast(89%);
+  
+  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(162deg) brightness(98%) contrast(89%);
+  -webkit-animation: slide-bottom 2s ease infinite both;
+	        animation: slide-bottom 2s ease infinite both;
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
 }
 .letter-e-image {
   position: absolute;
