@@ -481,6 +481,8 @@
 .subheader-text span {
   font-weight: bold;
 }
+
+/* Imagen flecha con animacion */
 .subheader-image {
   align-self: center;
   padding-bottom: 10px;
@@ -510,6 +512,8 @@
             transform: translateY(40px);
   }
 }
+/* Imagen flecha con animacion */
+
 .letter-e-image {
   position: absolute;
   width: 17rem;

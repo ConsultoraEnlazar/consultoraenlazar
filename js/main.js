@@ -34,6 +34,7 @@ for (var i = 0; i < btnProximamente.length; i++) {
             showConfirmButton: false,
             // timer: 5000,
             timerProgressBar: false,
+            showCloseButton: true,
         })
     }, false);
 }
