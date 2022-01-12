@@ -12,6 +12,33 @@ scrollBoton.addEventListener('click', () => {
 })
 
 
+
+
+//Modal Próximamente
+const btnProximamente = document.querySelectorAll('#btn-proxima');
+
+for (var i = 0; i < btnProximamente.length; i++) {
+    var self = btnProximamente[i];
+    self.addEventListener('click', function (event) {  
+        // prevent browser's default action
+        event.preventDefault();
+
+        Swal.fire({
+            title: '¡Próximamente!',
+            text: 'Actualmente este curso se encuentra en desarrollo.',
+            imageUrl: 'https://media.giphy.com/media/Slqg00ifDy1b3zXRRL/giphy.gif',
+            imageWidth: 200,
+            imageHeight: 150,
+            imageAlt: 'Proximamente',
+            width: '45em',
+            showConfirmButton: false,
+            // timer: 5000,
+            timerProgressBar: false,
+        })
+    }, false);
+}
+
+
 //Envio de formulario CONSULTA
 function submitFormConsultaGenerica(form) {
     Swal.fire({
