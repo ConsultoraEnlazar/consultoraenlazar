@@ -630,6 +630,63 @@
   height: 2rem;
 }
 /* -----Fin Seccion CARDS de cursos----- */
+/* Inicio seccion cursos y capacitaciones Somos Mas */
+.seccion_somosMas{
+  background-color: #34668A;
+  width: 100;
+  height: 100vh;
+}
+.titulo_somosMas{
+  color: #EBBE48;
+  padding: 10px;
+  padding-left: 40px;
+}
+.subtitulo_somosMas{
+  color: white;
+  padding-left: 50px;
+}
+.contador_somosMas{
+  width: 100%;
+ 
+}
+/* Fin seccion cursos y capacitaciones Somos Mas */
+
+.container-card_planAnual {
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+  /* align-self: center; */
+  max-width: 600px;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+.titulo__Plan{
+  margin: 30px;
+  padding-left: 20px;
+}
+.card__containerImage {
+  height: 350px;
+  background-color: var(--azul-claro);
+}
+.card__image {
+  width: 7em;
+  height: auto;
+  margin: 0 2em;
+  padding-top: 120px;
+}
+.card__containerImage_amigo {
+  height: 350px;
+  background-color: var(--amarillo);
+}
+.card__image_amigo {
+  width: 7em;
+  height: auto;
+  margin: 0 2em;
+  padding-top: 120px;
+}
+
 
 /* -----Inicio Footer----- */
 .footer {
