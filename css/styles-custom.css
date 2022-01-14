@@ -656,19 +656,23 @@
 /* Fin seccion cursos y capacitaciones Somos Mas */
 
 .container-card_planAnual {
-  display: flex;
-  align-items: center;
-  margin-left: 400px;
-  /* align-self: center; */
-  max-width: 600px;
-  box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: ease-in-out 0.5s;
-}
+  
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    
+    max-width: 650px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    
+  }
 .titulo__Plan{
   margin: 30px;
   padding-left: 20px;
+  
+  
 }
 .card__containerImage {
   height: 350px;
@@ -689,6 +693,14 @@
   height: auto;
   margin: 0 2em;
   padding-top: 120px;
+}
+.card__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 2rem 0 0.6rem 1rem;
+  margin-bottom: 0;
+  color:  #34668A;
+  
 }
 
 
