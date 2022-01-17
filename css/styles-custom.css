@@ -647,7 +647,7 @@
 }
 .titulo_somosMas{
   color: #EBBE48;
-  font-size: 1.75rem;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 0;
   padding: 0px 0px 0px 5rem;
@@ -670,6 +670,20 @@
   flex-direction: column;
   margin-bottom: 70px;
 }
+.efecto {
+  
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  transition: ease-in-out 0.4s;
+}
+.efecto:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
 
 .container-card_planAnual {
   
@@ -685,7 +699,7 @@
     
   }
 .titulo__Plan{
-  font-size: 1.75rem;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 0;
   padding: 0px 0px 70px 5rem;
@@ -725,7 +739,10 @@
   font-family: "Noah Text";
   padding: 1rem 1rem;
 }
-
+.boton{
+  margin-bottom: 10px !important;
+  
+}
 
 /* -----Inicio Footer----- */
 .footer {
