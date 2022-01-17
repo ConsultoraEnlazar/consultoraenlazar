@@ -688,7 +688,8 @@
   font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 0;
-  padding: 70px 0px 70px 40px;
+  padding: 0px 0px 70px 40px;
+  padding-top: 8rem;
   
 }
 .card__containerImage {
