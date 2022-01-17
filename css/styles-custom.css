@@ -647,14 +647,14 @@
 }
 .titulo_somosMas{
   color: #EBBE48;
-  font-size: 1.7rem;
+  font-size: 1.75rem;
   font-weight: bold;
   margin-bottom: 0;
-  padding: 0px 10px 4px 40px;
+  padding: 0px 0px 0px 40px;
 }
 .subtitulo_somosMas{
   color: white;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 500;
   padding-left: 40px;
 }
@@ -663,14 +663,21 @@
  
 }
 /* Fin seccion cursos y capacitaciones Somos Mas */
+.Contenedor__cards{
+  display: flex;
+ align-items: center;
+ justify-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
 
 .container-card_planAnual {
   
     display: flex;
     align-items: center;
-    margin-left: 350px;
     
-    max-width: 650px;
+    
+    max-width: 700px;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
     border-radius: 20px;
     overflow: hidden;
@@ -678,13 +685,14 @@
     
   }
 .titulo__Plan{
-  margin: 30px;
-  padding-left: 20px;
-  
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 70px 0px 70px 40px;
   
 }
 .card__containerImage {
-  height: 350px;
+  height: 360px;
   background-color: var(--azul-claro);
 }
 .card__image {
@@ -704,12 +712,17 @@
   padding-top: 120px;
 }
 .card__title {
-  font-size: 1.1rem;
+  font-size: 24px;
   font-weight: bold;
   padding: 2rem 0 0.6rem 1rem;
   margin-bottom: 0;
   color:  #34668A;
   
+}
+.contenido__card{
+  font-size: 16px;
+  font-family: "Noah Text";
+  padding: 1rem 1rem;
 }
 
 
