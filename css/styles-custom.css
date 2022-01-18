@@ -13,6 +13,11 @@
   src: url("../assets/fonts/noah-text-light-300.woff");
   font-weight: 300;
 }
+@font-face {
+  font-family: "Noah Text";
+  src: url("../assets/fonts/Noah\ Text\ Heavy.otf");
+  font-weight: 800;
+}
 
 /* -----VARIABLES----- */
 :root {
@@ -663,15 +668,15 @@
  
 }
 /* Fin seccion cursos y capacitaciones Somos Mas */
+
 .Contenedor__cards{
   display: flex;
  align-items: center;
  justify-items: center;
   flex-direction: column;
-  margin-bottom: 70px;
+  margin-bottom: 6rem;
 }
 .efecto {
-  
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   overflow: hidden;
@@ -683,8 +688,6 @@
   transform: scale(1.02);
   opacity: 0.9;
 }
-
-
 .container-card_planAnual {
   
     display: flex;
@@ -702,7 +705,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 0;
-  padding: 0px 0px 70px 5rem;
+  padding: 0px 0 6rem 5rem;
   padding-top: 8rem;
   
 }
@@ -731,19 +734,43 @@
   
 }
 .card__title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 800;
   padding: 2rem 0 0.6rem 1rem;
   margin-bottom: 0;
   color:  #34668A;
   
+}
+.tachado{
+  font-weight: bold;
+  position: relative;
+}
+.tachado::after{
+  content: "";
+  display: block;
+  height: 4px;
+  width: 85px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: rotate(-10deg);
+  background-color: var(--amarillo);
+}
+.descuento_30000{
+  font-size: 1.9rem;
+  font-weight: 800;
 }
 .contenido__card{
   font-size: 16px;
   font-family: "Noah Text";
   padding: 1rem 1rem;
 }
-
+.contenido__card__regalar{
+  font-size: 16px;
+  font-family: "Noah Text";
+  padding: 1rem 1rem;
+  margin-bottom: 3rem;
+}
 
 /* -----Inicio Footer----- */
 .footer {

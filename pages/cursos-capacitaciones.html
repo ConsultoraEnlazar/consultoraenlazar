@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="Cursos y Talleres de Consultora Enlazar para empresas e individuos">
+    <meta name="description" content="Cursos y capcitaciones de Consultora Enlazar para empresas e individuos">
     <meta name="keywords"
         content=" Recursos humanos, psicologia, psicología laboral, consultora enlazar, enlazar, consultoría, relaciones laborales, trabajo, educación, capital humano, talento, cursos, cursos online, capacitaciones, webinars gratuitos, curriculum, revisión de cv, empleabilidad, orientación vocacional, calidad de trabajo, comunidad, encontrar empleo, desarrollo profesional, reclutamiento, selección de personal, recruiting, coaching, acompañamiento personalizado, asesorías, recursos gratis, consultas, cosching, experiencia laboral, ">
-    <title>Cursos y talleres - Consultora Enlazar</title>
+    <title>Cursos y capacitaciones - Consultora Enlazar</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FDTGJRDSN"></script>
     <script>
@@ -108,8 +108,8 @@
     <header class="header-campus container-fluid">
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
-                <div class="col-8">
-                    <video autoplay="autoplay" class="img-fluid">
+                <div class="col-7">
+                    <video style="cursor: pointer;" onclick="playVid()" id="myVideo" autoplay class="img-fluid">
                         <source src="../assets/videos/video-campus-enlazar.mp4">
                     </video>
                     <!-- <img class="img-fluid" src="../assets/images/prueba-pc-campus.png" alt="pc"> -->
@@ -143,7 +143,7 @@
     <!-- Seccion de CARDS de cursos y capacitaciones -->
     <section class="section-cards__container container-fluid">
         <h3 class="text-center fw-bold mb-5">Todo lo que vas a encontrar:</h2>
-        <div class="w-75 swiper mySwiper">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card text-center" style="width: 18rem;">
@@ -427,11 +427,10 @@
         </div>
         <p class="text-center fw-bold pt-5">Actualizamos el contenido y brindamos más cursos cada año.</p>
     </section>
-    <!-- Inicio seccion somos mas -->
     
     <!-- Seccion Cada vez somos mas -->
     <section class="seccion_somosMas">
-        <div>
+        <div class="container">
             <h2 class="titulo_somosMas">¡Cada vez somos más!</h2>
             <h3 class="subtitulo_somosMas">Gracias por formar parte.</h3>
         </div>
@@ -445,9 +444,9 @@
         </div>
     </section>
 
-
+    <!-- Seccion Plan único con acceso a todo el Campus -->
     <section>
-        <div>
+        <div class="container">
             <h2 class="titulo__Plan">Plan único con acceso a todo el Campus</h2>
         </div>
         <div class="Contenedor__cards">
@@ -458,7 +457,7 @@
                         
                 </div class="d-flex flex-wrap  ">
                 <div class="card__particulares-text d-flex flex-column ">
-                    <h3 class="card__title">Enlazar Plus</h3>
+                    <h3 class="card__title">Enlazar Plus <span class="tachado">$60000</span> <span class="descuento_30000">$30000</span> </h3>
                     <p class="contenido__card">· Acceso a todos los cursos y capacitaciones. <br>
                         · Material de estudio exclusivo en PDF descargable. <br>
                         · Ejercicios y desafíos. <br>
@@ -477,14 +476,12 @@
                 </div class="d-flex flex-wrap ">
                 <div class="card__particulares-text d-flex flex-column">
                     <h3 class="card__title">Regalar a un amigo</h3>
-                    <p class="contenido__card">¡Porque el conocimiento es poder! 
+                    <p class="contenido__card__regalar">¡Porque el conocimiento es poder! 
                         Sorprendé a esa persona que lo merece y ayudala a insertarse en el mundo laboral, para ampliar sus conocimientos y formar su camino profesional. 
                         Obtendrá el acceso a todo el Campus con el plan Enlazar Plus. 
-                        
-                        
                         </p>
                     <a data-bs-toggle="modal" data-bs-target="#elaboracionCVModal" id="btn-open-modal" href=""
-                        class="button-card btn button-card__particulares align-self-end boton">QUIERO REGALAR</a>
+                        class="button-card btn button-card__particulares align-self-end boton" style="padding: 0.2rem 2.1rem;">QUIERO REGALAR</a>
                 </div>
             </div>
         </div>
@@ -782,7 +779,7 @@
             centeredSlides: true,
             initialSlide: 12,
             loop: true,
-            slidesPerView: "auto",
+            slidesPerView: 4,
             coverflowEffect: {
                 rotate: 50,
                 stretch: 0,
