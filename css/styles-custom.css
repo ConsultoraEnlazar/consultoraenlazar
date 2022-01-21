@@ -775,19 +775,30 @@
 @media screen and (max-width: 600px) {
   .container-card_planAnual {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 500px;
+    width: 80%;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
     border-radius: 20px;
     overflow: hidden;
     transition: ease-in-out 0.5s;
 }
-.card__containerImage {
-  height: 300px;
-  background-color: var(--azul-claro);
-  display: flex;
-  align-items: center;
+  .card__containerImage {
+    padding: 0rem 8rem;
+    height: 8rem;
+    background-color: var(--azul-claro);
+    display: flex;
+    align-items: center;
 }
+  .img__plan-anual,
+  .card__image_amigo{
+    width: 5em;
+}
+  .card__containerImage_amigo{
+    height: 8rem;
+    padding: 0rem 8rem;
+  }
+
 }
 
 /* -----Inicio Footer----- */
