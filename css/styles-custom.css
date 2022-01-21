@@ -644,6 +644,14 @@
 .gifSomosMas{
   padding-bottom: 2.5rem;
 }
+.margen{
+  
+    margin-bottom: 1px;
+
+}
+.subtituloActualizamos{
+  font-size: 22px;
+}
 .textoContador{
   font-weight: bold;
   color: white;
@@ -771,6 +779,9 @@
   padding: 1rem 1rem;
   margin-bottom: 3rem;
 }
+.mb-55{
+  margin-bottom: 3rem!important;
+}
 /* -----Inicio Media Qeries Cursos y capacitaciones----- */
 @media screen and (max-width: 600px) {
   .container-card_planAnual {
@@ -798,6 +809,15 @@
     height: 8rem;
     padding: 0rem 8rem;
   }
+  .seccion_somosMas {
+    background-color: #34668A;
+    padding: 4rem 0;
+}
+.section-cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
   
 
 }
@@ -828,7 +848,25 @@
   padding: 0px 0 4rem 2rem;
   padding-top: 4rem;
 }
+.subtituloActualizamos{
+  font-size: 16px;
+}
+.mb-5 {
+  margin-bottom: 0rem!important;
+}
+.section-cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 4rem;
+  padding-bottom: 4rem !important;
+}
 
+}
+@media screen and (max-width: 400px) {
+  .section-cards__container {
+    background-color: var(--azul-claro);
+    padding-top: 4rem;
+    padding-bottom: 4rem !important;
+  }
 }
 
 /* -----Inicio Footer----- */
@@ -1505,7 +1543,7 @@
 /* ---Navbar--- */
 @media screen and (max-width: 975px) {
   .navbar-brand img {
-    width: 115px;
+    width: 100px;
     height: 25px;
   }
 }
