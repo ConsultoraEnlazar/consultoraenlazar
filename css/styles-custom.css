@@ -798,6 +798,36 @@
     height: 8rem;
     padding: 0rem 8rem;
   }
+  
+
+}
+@media screen and (max-width: 500px) {
+.header-campus {
+  margin-top: 2rem;
+}
+.titulo-cards-mobile{
+  font-size: 22px;
+}
+.titulo_somosMas {
+  color: #EBBE48;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0px 0px 0px 2rem;
+}
+.subtitulo_somosMas {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 2rem;
+}
+.titulo__Plan {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding: 0px 0 4rem 2rem;
+  padding-top: 4rem;
+}
 
 }
 
