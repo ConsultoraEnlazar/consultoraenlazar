@@ -1605,6 +1605,9 @@
     position: static;
     top: 0;
   }
+  .subheader-container.subheader-cyc{
+    padding-top: 2rem;
+  }
   .subheader-container{
     padding-bottom: 4rem
   }

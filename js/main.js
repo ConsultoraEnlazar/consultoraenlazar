@@ -11,13 +11,6 @@ scrollBoton.addEventListener('click', () => {
     })
 })
 
-// Play video Campus
-let vid = document.getElementById("myVideo");
-
-function playVid() {
-    vid.play();
-}
-
 
 //Modal Próximamente
 const btnProximamente = document.querySelectorAll('#btn-proxima');

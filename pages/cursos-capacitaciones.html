@@ -109,7 +109,7 @@
         <div class="container-fluid">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-12 col-md-7">
-                    <video style="cursor: pointer;" onclick="playVid()" id="myVideo" autoplay class="img-fluid">
+                    <video style="cursor: pointer;" onclick="this.paused? this.play() : this.pause()" id="myVideo" autoplay playsinline class="img-fluid">
                         <source src="../assets/videos/video-campus-enlazar-final (1).mp4"
                             srcset="../assets/videos/video-campus-enlazar-final-mobile (1).mp4 2x, ../assets/videos/video-campus-enlazar-final (1).mp4 1x">
                     </video>
@@ -137,7 +137,7 @@
     </header>
 
     <!-- SUBHEADER -->
-    <section class="subheader-container">
+    <section class="subheader-container subheader-cyc">
         <img class="subheader-image" src="../assets/images/flecha-doble.svg" alt="Flecha doble">
     </section>
 
@@ -875,6 +875,7 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+                dynamicBullets: true,
             },
         });
     </script>
