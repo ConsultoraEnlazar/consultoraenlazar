@@ -699,9 +699,7 @@
 .container-card_planAnual {
   
     display: flex;
-    align-items: center;
-    
-    
+    align-items: center; 
     width: 600px;
     box-shadow: 4px 4px 10px rgb(0 0 0 / 25%);
     border-radius: 20px;
@@ -782,6 +780,20 @@
 .mb-55{
   margin-bottom: 3rem!important;
 }
+
+.enlazar-plus__text{
+  padding: 0 6rem;
+}
+
+.medio-pago{
+  align-self: flex-start;
+  margin-bottom: 1rem;
+}
+.medio-pago label{
+  padding-right: 1rem;
+}
+
+
 /* -----Inicio Media Qeries Cursos y capacitaciones----- */
 @media screen and (max-width: 600px) {
   .container-card_planAnual {
@@ -852,7 +864,7 @@
   font-size: 16px;
 }
 .mb-5 {
-  margin-bottom: 0rem!important;
+  margin-bottom: 3rem!important;
 }
 .section-cards__container {
   background-color: var(--azul-claro);
