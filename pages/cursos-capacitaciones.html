@@ -486,7 +486,7 @@
                         sus conocimientos y formar su camino profesional.
                         Obtendrá el acceso a todo el Campus con el plan Enlazar Plus.
                     </p>
-                    <a data-bs-toggle="modal" data-bs-target="#elaboracionCVModal" id="btn-open-modal" href=""
+                    <a data-bs-toggle="modal" data-bs-target="#enlazarRegaloAmigoModal" id="btn-open-modal" href=""
                         class="button-card btn button-card__particulares align-self-end boton"
                         style="margin-right: 1rem; padding: 0.2rem 2.1rem;">QUIERO REGALAR</a>
                 </div>
@@ -506,9 +506,9 @@
                         Nos pondremos en contacto a la brevedad para continuar con la operación.</p>
                 </div>
                 <div class="modal-body__trabaja-nosotros">
-                    <form onsubmit="return submitFormReclutamientoSeleccion(this);"
+                    <form onsubmit="return submitFormPago(this);"
                         class="modal-body__form d-flex flex-column align-items-center"
-                        action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
                         enctype="multipart/form-data">
                         <div class="input-div__name-tel d-flex justify-content-between mt-3 w-100">
                             <input class="input__name" type="text" name="Nombre y Apellido"
@@ -540,6 +540,61 @@
 
                         <!-- inputs hidden -->
                         <input type="hidden" name="_subject" value="Enlazar Plus: Medio de pago">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/cursos-capacitaciones">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Regalar a un amigo -->
+    <div class="modal fade" id="enlazarRegaloAmigoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content__trabaja-nosotros pt-3 d-flex align-items-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header__trabaja-nosotros d-flex flex-column align-items-center">
+                    <h5 class="modal-title__trabaja-nosotros text-center">¿Cómo querés abonar?</h5>
+                    <p class="envianos-consulta__text enlazar-plus__text fw-bold text-center">Completá los datos y elegí la opción que prefieras para realizar el pago. 
+                        Nos pondremos en contacto a la brevedad para continuar con la operación.</p>
+                </div>
+                <div class="modal-body__trabaja-nosotros">
+                    <form onsubmit="return submitFormPago(this);"
+                        class="modal-body__form d-flex flex-column align-items-center"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
+                        enctype="multipart/form-data">
+                        <div class="input-div__name-tel d-flex justify-content-between mt-3 w-100">
+                            <input class="input__name" type="text" name="Nombre y Apellido"
+                                placeholder="Nombre y Apellido" required>
+                            <input class="input__empresa" type="text" placeholder="Empresa" name="Empresa" required>
+                        </div>
+                        <div class="input-div__name-tel d-flex justify-content-between my-3 w-100">
+                            <input class="input__email-empresa" type="email" name="Email" placeholder="Email" required>
+                            <input class="input__tel" type="tel" placeholder="Teléfono" name="Telefono" required>
+                        </div>
+                        <div class="mb-3 w-100">
+                            <textarea class="textarea__mensaje w-100" rows="6" name="Mensaje"
+                                placeholder="Escribí tu consulta acá" required></textarea>
+                        </div>
+                        <div class="medio-pago">                         
+                            <label for="mercadoPago1"><input type="radio" name="Medio de pago" id="mercadoPago1" value="Mercado Pago"> Mercado Pago</label>
+                            
+                            <label for="transferencia1"><input type="radio" name="Medio de pago" id="transferencia1" value="Transferencia Bancaria"> Transferencia bancaria</label>
+                            
+                            <label for="bitcoin1"><input type="radio" name="Medio de pago" id="bitcoin1" value="Bitcoin"> Bitcoin</label>
+                            
+                            <label for="paypal1"><input type="radio" name="Medio de pago" id="paypal1" value="Paypal"> Paypal</label>
+                        </div>
+                        <div class="d-flex mb-5 align-self-end">
+                            <div>
+                                <button type="submit" class="button-card btn">enviar consulta</button>
+                            </div>
+                        </div>
+
+                        <!-- inputs hidden -->
+                        <input type="hidden" name="_subject" value="Regalar a un amigo: Medio de pago">
                         <input type="hidden" name="_template" value="box">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://consultoraenlazar.com.ar/pages/cursos-capacitaciones">

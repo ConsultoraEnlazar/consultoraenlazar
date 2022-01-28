@@ -38,6 +38,28 @@ for (var i = 0; i < btnProximamente.length; i++) {
 }
 
 
+//Envio de formulario ENLAZAR PLUS y REGALO
+function submitFormPago(form) {
+    Swal.fire({
+        title: 'Opción elegida con éxito.',
+        text: 'Nos pondremos en contacto a la brevedad.',
+        imageUrl: '../assets/images/consulta-enviada-con-exito.gif',
+        imageWidth: 200,
+        imageHeight: 150,
+        imageAlt: 'Consulta enviada',
+        width: '45em',
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+    })
+        .then((isOk) => {
+            if (isOk) {
+                form.submit();
+            }
+        });
+    return false
+}
+
 //Envio de formulario CONSULTA
 function submitFormConsultaGenerica(form) {
     Swal.fire({
