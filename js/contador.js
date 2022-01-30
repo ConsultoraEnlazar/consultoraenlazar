@@ -4,10 +4,9 @@ const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
 const fechaActual = new Date()
-console.log(fechaActual);
 
 const campusFecha = new Date(2022, 3, 11)
-console.log(campusFecha);
+
 function actualizar() {
     const current = new Date()
     const difference = campusFecha - current

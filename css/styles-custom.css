@@ -64,6 +64,11 @@
 .time small{
   font-size: 1.2rem;
 }
+@media screen and (max-width:500px) {
+  .countdown{
+    flex-direction: column;
+  }
+}
 
 
 /* ---Eliminado de los botones el focus de Bootstrap--- */
