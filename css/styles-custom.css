@@ -68,6 +68,8 @@
   .countdown{
     flex-direction: column;
   }
+  .countdown-section {
+    height: 100%;
 }
 
 
