@@ -5,7 +5,7 @@ const seconds = document.getElementById("seconds");
 
 const fechaActual = new Date()
 
-const campusFecha = new Date(2022, 3, 11)
+const campusFecha = new Date(2022, 6, 11)
 
 function actualizar() {
     const current = new Date()
